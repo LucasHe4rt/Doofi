@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
     <div id="slider" class="my-slide">
-        <div><img src="http://placehold.it/1287x400"></div>
-        <div><img src="http://placehold.it/1287x400"></div>
-        <div><img src="http://placehold.it/1287x400"></div>
+        <div><img style="width: 100%" src="http://placehold.it/1287x400"></div>
+        <div><img style="width: 100%" src="http://placehold.it/1287x400"></div>
+        <div><img style="width: 100%" src="http://placehold.it/1287x400"></div>
     </div>
         <div class="container">
             <div  class="row d-flex justify-content-center">
@@ -39,8 +39,9 @@
         </div>
     <div class="container-fluid text-white bg-dark">
         <div class="container doofi-footer">
-            <h4>Tipos de estabelecimento:</h4>
             <ul class="" style="max-height: 132px">
+                <h4 class=" header-link">Tipos de estabelecimento:</h4>
+
                 <li class="internal-link">
                     <a class="cousine-link"  href="">Bares</a>
                 </li>
@@ -60,7 +61,9 @@
                     <a class="cousine-link"  href="">Sorveteria</a>
                 </li>
             </ul>
+            <p style="margin-left: 40px;margin-top: 20px;text-align: right">
+                © Copyright 2018 - Doofi - Todos os direitos reservados
+            </p>
         </div>
     </div>
-
 @endsection

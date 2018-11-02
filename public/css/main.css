@@ -3,7 +3,7 @@
 }
 
 .doofi-footer{
-    height: 300px;
+    height: 210px;
     margin-left: 100px;
     padding-top: 50px;
 }
@@ -48,3 +48,17 @@
     color: lightgrey;
     text-decoration: none;
 }
+
+.header-link {
+    background: transparent;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    height: auto;
+    padding: 0;
+}
+
+
+

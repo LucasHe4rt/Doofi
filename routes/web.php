@@ -25,6 +25,9 @@ Route::group(['middleware' => ['auth']],function (){
         Route::get('/add','EstabelecimentoController@create')->name('estab.create');
     });
 
+    Route::prefix('admin')->group(function (){
+       Route::get('', 'AdminController@index')->name('admin.index');
+    });
 });
 
 
