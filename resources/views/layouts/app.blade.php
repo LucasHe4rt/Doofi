@@ -83,11 +83,7 @@
             @yield('content')
 
     </div>
-<div class="container-fluid text-white bg-dark">
-    <div class="container doofi-footer">
 
-    </div>
-</div>
 </body>
 <script>
     $(document).ready(function () {

@@ -17,4 +17,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::group(['middleware' => ['auth']],function (){
+
+    Route::prefix('estabelecimento')->group(function (){
+        Route::get('','EstabelecimentoController@index')->name('estab.index');
+        Route::get('/novo','EstabelecimentoController@store')->name('estab.store');
+        Route::get('/add','EstabelecimentoController@create')->name('estab.create');
+    });
+
+});
+
+
 Route::get('/home', 'HomeController@index')->name('home');
