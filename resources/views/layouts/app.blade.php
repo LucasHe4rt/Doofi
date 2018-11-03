@@ -23,6 +23,8 @@
     <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome-extension.min.css')  }}">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -44,6 +46,17 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Sobre nós</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="">Dropdown</a>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                    <a class="dropdown-item" href="#"><i class="fas fa-wine-glass-alt"></i> Bares</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-store"></i> Lanchonetes</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-chart-pie"></i> Pizzarias</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-store-alt"></i> Pub's</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-utensils"></i> Restaurrantes</a>
+                    <a class="dropdown-item" href="#"><img src="{{asset('img/ice-cream.svg')}}" id="iceCream"> Sorveterias</a>
+                </div>
             </li>
             @guest
                 <ul style="margin-left: 840px" class="navbar-nav mr-auto">

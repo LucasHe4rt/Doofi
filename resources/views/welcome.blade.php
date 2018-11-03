@@ -1,9 +1,10 @@
 @extends('layouts.app')
 @section('content')
     <div id="slider" class="my-slide">
-        <div><img style="width: 100%" src="http://placehold.it/1287x400"></div>
-        <div><img style="width: 100%" src="http://placehold.it/1287x400"></div>
-        <div><img style="width: 100%" src="http://placehold.it/1287x400"></div>
+        <div><img style="width: 100%" src="{{asset('img/slider1.jpg')}}" class="imgSlider"></div>
+        <div><img style="width: 100%" src="http://placehold.it/1287x400" class="imgSlider"></div>
+        <div><img style="width: 100%" src="http://placehold.it/1287x400" class="imgSlider"></div>
+
     </div>
         <div class="container">
             <div  class="row d-flex justify-content-center">
