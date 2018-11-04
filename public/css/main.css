@@ -1,14 +1,10 @@
 .my-slide{
     margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
 }
 
 .doofi-footer{
-    height: 210px;
-    margin-left: 100px;
-    padding-top: 50px;
+    background: #0f0f0f;
+    color: #ffffff;
 }
 
 .footer-title{
@@ -70,5 +66,10 @@
     height: 400px;
     width: 1287px;
 }
+.loginregister{
+    left: auto !important;
+    right: 1px;
+}
+
 
 

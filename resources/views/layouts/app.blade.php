@@ -28,7 +28,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
+    <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }} <img src="{{asset('img/logo.png')}}" style="width: 40px; height: 40px;"> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
