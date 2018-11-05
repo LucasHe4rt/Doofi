@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/restaurantes', function(){
+    return view('restaurantes');
+});
+
 Auth::routes();
 
 Route::group(['middleware' => ['auth']],function (){
@@ -32,3 +36,4 @@ Route::group(['middleware' => ['auth']],function (){
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+

@@ -1,9 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    <!--<div id="slider" class="my-slide">
-        <div><img style="width: 100%" src="{{asset('img/slider1.jpg')}}" class="imgSlider"></div>
-        <div><img style="width: 100%" src="http://placehold.it/1287x400" class="imgSlider"></div>
-        <div><img style="width: 100%" src="http://placehold.it/1287x400" class="imgSlider"></div>-->
     <div id="carouselExampleIndicators" class="carousel slide my-slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -30,12 +26,12 @@
             <span class="sr-only">Proximo</span>
         </a>
     </div>
-        <div class="container containercustom">
+        <div class="container">
             <div  class="row d-flex justify-content-center">
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Restaurantes</h3>
-                        <a href="#"><img style="height: 200px; width: 100%; display: block;" src="{{asset('img/imgcard1.jpg')}}" alt="Card image"></a>
+                        <a href="#"><img src="{{asset('img/imgcard1.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
 
@@ -43,7 +39,7 @@
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Lanchonetes</h3>
                         <a href="#">
-                            <img style="height: 200px; width: 100%; display: block;" src="{{asset('img/imgcard2.jpg')}}" alt="Card image"></a>
+                            <img src="{{asset('img/imgcard2.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
             </div>
@@ -51,13 +47,13 @@
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Pizzarias</h3>
-                        <a href="#"><img style="height: 200px; width: 100%; display: block;" src="{{asset('img/imgcard3.jpg')}}" alt="Card image"></a>
+                        <a href="#"><img src="{{asset('img/imgcard3.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Outros</h3>
-                        <a href="#"><img style="height: 200px; width: 100%; display: block;" src="{{asset('img/imgcard4.jpg')}}" alt="Card image"></a>
+                        <a href="#"><img src="{{asset('img/imgcard4.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
             </div>

@@ -7,15 +7,6 @@
     color: #ffffff;
 }
 
-.footer-title{
-    font-size: 18px;
-}
-
-.footer-cozinha{
-    display: block;
-    margin: 38px 0 0;
-}
-
 .list-link{
     display: flex;
     flex-direction: column;
@@ -62,14 +53,7 @@
     height: 17px;
     width: 17px;
 }
-.imgSlider{
-    height: 400px;
-    width: 1287px;
-}
-.loginregister{
-    left: auto !important;
-    right: 1px;
-}
+
 
 
 

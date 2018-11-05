@@ -28,7 +28,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }} <img src="{{asset('img/logo.png')}}" style="width: 40px; height: 40px;"> </a>
+    <img src="{{asset('img/logo.png')}}" style="width: 40px; height: 40px;"><a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Doofi') }}  </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,17 +49,17 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="">Dropdown</a>
-                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                <div class="dropdown-menu" x-placement="bottom-start">
                     <a class="dropdown-item" href="#"><i class="fas fa-wine-glass-alt"></i> Bares</a>
                     <a class="dropdown-item" href="#"><i class="fas fa-store"></i> Lanchonetes</a>
                     <a class="dropdown-item" href="#"><i class="fas fa-chart-pie"></i> Pizzarias</a>
                     <a class="dropdown-item" href="#"><i class="fas fa-store-alt"></i> Pub's</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-utensils"></i> Restaurrantes</a>
+                    <a class="dropdown-item" href="{{url('/restaurantes')}}"><i class="fas fa-utensils"></i> Restaurrantes</a>
                     <a class="dropdown-item" href="#"><img src="{{asset('img/ice-cream.svg')}}" id="iceCream"> Sorveterias</a>
                 </div>
             </li>
             @guest
-                <ul style="margin-left: 840px" class="navbar-nav mr-auto">
+                <ul style="margin-left: 840px" class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
