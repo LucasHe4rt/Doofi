@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/restaurantes', function(){
     return view('restaurantes');
-});
+})->name('rest.index');
 
 Auth::routes();
 
@@ -32,6 +32,11 @@ Route::group(['middleware' => ['auth']],function (){
     Route::prefix('admin')->group(function (){
        Route::get('', 'AdminController@index')->name('admin.index');
     });
+
+    Route::prefix('perfil')->group(function (){
+       Route::get('{id}','PerfilController@index')->name('perfil.index');
+    });
+
 });
 
 

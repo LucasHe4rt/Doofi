@@ -27,16 +27,16 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome-extension.min.css')  }}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <img src="{{asset('img/logo.png')}}" style="width: 40px; height: 40px;"><a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Doofi') }}  </a>
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Doofi') }}  </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/') }}">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Todos</a>
@@ -48,18 +48,18 @@
                 <a class="nav-link" href="#">Sobre nós</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="">Dropdown</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="">Categorias</a>
                 <div class="dropdown-menu" x-placement="bottom-start">
                     <a class="dropdown-item" href="#"><i class="fas fa-wine-glass-alt"></i> Bares</a>
                     <a class="dropdown-item" href="#"><i class="fas fa-store"></i> Lanchonetes</a>
                     <a class="dropdown-item" href="#"><i class="fas fa-chart-pie"></i> Pizzarias</a>
                     <a class="dropdown-item" href="#"><i class="fas fa-store-alt"></i> Pub's</a>
-                    <a class="dropdown-item" href="{{url('/restaurantes')}}"><i class="fas fa-utensils"></i> Restaurrantes</a>
+                    <a class="dropdown-item" href="{{route('rest.index')}}"><i class="fas fa-utensils"></i> Restaurantes</a>
                     <a class="dropdown-item" href="#"><img src="{{asset('img/ice-cream.svg')}}" id="iceCream"> Sorveterias</a>
                 </div>
             </li>
             @guest
-                <ul style="margin-left: 840px" class="navbar-nav">
+                <ul style="margin-left: 700px" class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
@@ -69,13 +69,13 @@
                     @endif
                 </li>
             @else
-                <li style="margin-left: 850px" class="nav-item dropdown">
+                <li style="margin-left: 800px" class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Perfil</a>
+                        <a class="dropdown-item" href="{{route('perfil.index', Auth::user()->id)}}">Perfil</a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -31,7 +31,7 @@
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Restaurantes</h3>
-                        <a href="#"><img src="{{asset('img/imgcard1.jpg')}}" alt="Card image"></a>
+                        <a href="{{route('rest.index')}}"><img src="{{asset('img/imgcard1.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
 
