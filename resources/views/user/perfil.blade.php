@@ -21,8 +21,8 @@
                             <h5 class="card-title">{{$e->name}}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">{{$e->type}}</h6>
                             <p class="card-text">{{$e->description}}</p>
-                            <a href="{{route('estab.edit',$e->id)}}"><button class="btn btn-secondary"> Editar </button></a>
-                            <a href="{{route('estab.delete',$e->id)}}"><button class="btn btn-danger">Excluir</button></a>
+                            <a href="{{route('estab.edit',$e->id)}}"><button class="profile-btn-edit"> Editar </button></a>
+                            <a href="{{route('estab.delete',$e->id)}}"><button class="profile-btn-del btn-danger">Excluir</button></a>
                         </div>
                     </div>
                 </div>

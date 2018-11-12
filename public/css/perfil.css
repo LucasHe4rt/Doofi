@@ -23,3 +23,15 @@ body{
     color: #6c757d;
     cursor: pointer;
 }
+.profile-btn-edit{
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color: gray;
+}
+.profile-btn-del{
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
