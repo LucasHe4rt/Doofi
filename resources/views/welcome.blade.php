@@ -31,14 +31,14 @@
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Restaurantes</h3>
-                        <a href="{{route('rest.index')}}"><img src="{{asset('img/imgcard1.jpg')}}" alt="Card image"></a>
+                        <a href="{{route('restaurante')}}"><img src="{{asset('img/imgcard1.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Lanchonetes</h3>
-                        <a href="#">
+                        <a href="{{route('lanchonete')}}">
                             <img src="{{asset('img/imgcard2.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
                         <h3 class="card-header bg-primary">Pizzarias</h3>
-                        <a href="#"><img src="{{asset('img/imgcard3.jpg')}}" alt="Card image"></a>
+                        <a href="{{route('pizzaria')}}"><img src="{{asset('img/imgcard3.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
                 <div class="col-md-4">

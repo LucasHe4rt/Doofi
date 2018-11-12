@@ -39,7 +39,7 @@
                 <a class="nav-link" href="{{ url('/') }}">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Todos</a>
+                <a class="nav-link" href="{{route('todos')}}">Todos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contato</a>
@@ -50,12 +50,12 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="">Categorias</a>
                 <div class="dropdown-menu" x-placement="bottom-start">
-                    <a class="dropdown-item" href="#"><i class="fas fa-wine-glass-alt"></i> Bares</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-store"></i> Lanchonetes</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-chart-pie"></i> Pizzarias</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-store-alt"></i> Pub's</a>
-                    <a class="dropdown-item" href="{{route('rest.index')}}"><i class="fas fa-utensils"></i> Restaurantes</a>
-                    <a class="dropdown-item" href="#"><img src="{{asset('img/ice-cream.svg')}}" id="iceCream"> Sorveterias</a>
+                    <a class="dropdown-item" href="{{route('bar')}}"><i class="fas fa-wine-glass-alt"></i> Bares</a>
+                    <a class="dropdown-item" href="{{route('lanchonete')}}"><i class="fas fa-store"></i> Lanchonetes</a>
+                    <a class="dropdown-item" href="{{route('pizzaria')}}"><i class="fas fa-chart-pie"></i> Pizzarias</a>
+                    <a class="dropdown-item" href="{{route('pub')}}"><i class="fas fa-store-alt"></i> Pub's</a>
+                    <a class="dropdown-item" href="{{route('restaurante')}}"><i class="fas fa-utensils"></i> Restaurantes</a>
+                    <a class="dropdown-item" href="{{route('sorveteria')}}"><img src="{{asset('img/ice-cream.svg')}}" id="iceCream"> Sorveterias</a>
                 </div>
             </li>
             @guest
@@ -96,15 +96,4 @@
             @yield('content')
 
 </body>
-<script>
-    $(document).ready(function () {
-        $('#slider').slick({
-            autoplay: true,
-            autoplaySpeed: 3000,
-            dots: false,
-            prevArrow: false,
-            nextArrow: false
-        });
-    });
-</script>
 </html>

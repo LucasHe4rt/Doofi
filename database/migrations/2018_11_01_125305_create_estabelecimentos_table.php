@@ -15,16 +15,12 @@ class CreateEstabelecimentosTable extends Migration
     {
         Schema::create('estabelecimentos', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->references('id')->on('users');
             $table->string('name');
-            $table->string('type');
+            $table->integer('type');
             $table->string('address');
             $table->string('number');
             $table->string('phone');
-            $table->string('phone1')->nullable();
-            $table->string('phone2')->nullable();
-            $table->string('cellphone')->nullable();
-            $table->string('cellphone2')->nullable();
-            $table->string('cellphone3')->nullable();
             $table->string('description');
             $table->timestamps();
         });
