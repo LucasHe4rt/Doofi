@@ -58,38 +58,38 @@ class EstabelecimentoController extends Controller
 
     public function bar()
     {
-        $bares = Estabelecimentos::where('type', '=', 0)->get();
+        $bares = Estabelecimentos::where('type', '=', 'Bar')->get();
 
         return view('bares', ['bares' => $bares]);
     }
 
 
     public function lanchonete(){
-        $lanch = Estabelecimentos::where('type','=',1)->get();
+        $lanch = Estabelecimentos::where('type','=', 'Lanchonete')->get();
 
         return view('lanchonetes',['lanch' => $lanch]);
     }
 
     public function pizzaria(){
-        $pizza = Estabelecimentos::where('type','=',2)->get();
+        $pizza = Estabelecimentos::where('type','=','Pizzaria')->get();
 
         return view('pizzarias',['pizza' => $pizza]);
     }
 
     public function pub(){
-        $pub = Estabelecimentos::where('type','=',3)->get();
+        $pub = Estabelecimentos::where('type','=','Pub')->get();
 
         return view('pubs',['pub' => $pub]);
     }
 
     public function restaurante(){
-        $rest = Estabelecimentos::where('type','=',4)->get();
+        $rest = Estabelecimentos::where('type','=','Restaurante')->get();
 
         return view('restaurantes',['rest' => $rest]);
     }
 
     public function sorveteria(){
-        $sorv = Estabelecimentos::where('type','=',5)->get();
+        $sorv = Estabelecimentos::where('type','=','Sorveteria')->get();
 
         return view('sorveterias',['sorv' => $sorv]);
     }

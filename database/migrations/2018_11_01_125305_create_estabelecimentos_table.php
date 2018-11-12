@@ -17,7 +17,7 @@ class CreateEstabelecimentosTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->references('id')->on('users');
             $table->string('name');
-            $table->integer('type');
+            $table->string('type');
             $table->string('address');
             $table->string('number');
             $table->string('phone');
