@@ -7,7 +7,7 @@
             <img class="d-flex align-self-start" src="https://via.placeholder.com/513x350.png?text=Restaurante+Teste" alt="Generic placeholder image">
             <div class="media-body pl-3">
                 <div class="nome-restaurante">
-                   {{$s->name}} <small>Tempo de preparao</small>
+                   {{$s->name}}
                 </div>
                 <div class="stats">
                     <span><i class="fa fa-phone"></i>{{$s->phone}}</span>
