@@ -4,7 +4,7 @@
     <h1>Pizzarias</h1>
         @foreach($pizza as $p)
         <div class="media col-md-6">
-            <img class="d-flex align-self-start" src="https://via.placeholder.com/513x350.png?text=Restaurante+Teste" alt="Generic placeholder image">
+            <img class="d-flex align-self-start" src="{{asset('img/pizza.png')}}" alt="Generic placeholder image">
             <div class="media-body pl-3">
                 <div class="nome-restaurante">
                    {{$p->name}}
