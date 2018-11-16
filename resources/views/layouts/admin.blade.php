@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Minimized Sidebar | Dashboard UI Kit</title>
+    <title>Doofi | Administrador</title>
     <meta name="description" content="Dashboard UI Kit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,57 +19,62 @@
 </head>
 <body class="o-page">
 
-<div class="o-page__sidebar is-minimized js-page-sidebar">
-    <div class="c-sidebar is-minimized">
+<div class="o-page__sidebar js-page-sidebar">
+    <div class="c-sidebar">
         <a class="c-sidebar__brand" href="#">
-            <img class="c-sidebar__brand-img" src="img/logo.png" alt="Logo">
-            <span class="c-sidebar__brand-text">Dashboard</span>
+            <img class="c-sidebar__brand-img" src="#" alt="Logo">
+            {{__('Bem-Vindo ')}}
         </a>
+
+        <h4 class="c-sidebar__title">{{__('Principal')}}</h4>
         <ul class="c-sidebar__list">
 
             <li class="c-sidebar__item">
-                <a class="c-sidebar__link is-active" href="home-overview.html">
-                            <span class="c-sidebar__icon">
-                                <i class="fa fa-home"></i>
-                            </span>Overview
+                <a class="c-sidebar__link   " href="{{ route('admin.index') }}">
+                    <i class="fa fa-home u-mr-xsmall"></i>{{__('Início')}}
                 </a>
             </li>
 
             <li class="c-sidebar__item">
-                <a class="c-sidebar__link" href="performance.html">
-                            <span class="c-sidebar__icon">
-                                <i class="fa fa-tachometer"></i>
-                            </span>Performance
+                <a class="c-sidebar__link" href="#">
+                    <i class="fa fa-credit-card u-mr-xsmall"></i>{{__('Gerenciar Usuários')}}
+                </a>
+            </li>  <li class="c-sidebar__item">
+                <a class="c-sidebar__link" href="{{route('estab.index')}}">
+                    <i class="fa fa-barcode u-mr-xsmall"></i>{{__('Gerenciar Estabelecimentos')}}
                 </a>
             </li>
 
+        </ul>
+
+        <h4 class="c-sidebar__title">{{__('Configurações')}}</h4>
+        <ul class="c-sidebar__list">
             <li class="c-sidebar__item">
-                <a class="c-sidebar__link" href="analytics.html">
-                            <span class="c-sidebar__icon">
-                                <i class="fa fa-line-chart"></i>
-                            </span>Analytics
+                <a class="c-sidebar__link" href="#">
+                    <i class="fa fa-shopping-cart u-mr-xsmall"></i>{{__('Add Usuários')}}
                 </a>
             </li>
 
-            <li class="c-sidebar__item">
-                <a class="c-sidebar__link" target="_blank" href="index.html">
-                            <span class="c-sidebar__icon">
-                                <i class="fa fa-rocket"></i>
-                            </span>Landing
-                </a>
-            </li>
+        </ul>
 
-            <li class="c-sidebar__item">
-                <a class="c-sidebar__link" target="_blank" href="projects.html">
-                            <span class="c-sidebar__icon">
-                                <i class="fa fa-table"></i>
-                            </span>Projects
-                </a>
-            </li>
+
+
+
+        <li class="c-sidebar__item">
+            <a class="c-sidebar__link"href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <i class="fa fa-sign-in u-mr-xsmall"></i>{{__('Sair')}}
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </a>
+        </li>
+
         </ul>
 
     </div><!-- // .c-sidebar -->
-</div><!-- // .o-page__sidebar -->
+</div>
+
+<!-- // .o-page__sidebar -->
 <main class="o-page__content">
     @yield('content')
 </main>

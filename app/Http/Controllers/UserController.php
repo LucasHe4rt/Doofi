@@ -9,12 +9,12 @@ class UserController extends Controller
 {
 
     public function index(){
-
+        $user = User::all();
+        return view('admin.userIndex',['user' => $user]);
     }
 
-
     public function edit(User $id){
-
+        return view('admin.userEdit',['user' => $id]);
     }
 
     public function update(Request $request,$id){
@@ -28,7 +28,9 @@ class UserController extends Controller
         $user->update($data);
     }
 
-    public function perfil(User $id){
-
+    public function delete($id){
+        $estab = User::findOrFail($id);
+        $estab->delete();
+        return redirect()->back();
     }
 }
