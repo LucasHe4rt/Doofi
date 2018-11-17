@@ -36,13 +36,13 @@ Route::group(['middleware' => ['auth']],function (){
         Route::get('/delete/{id}','EstabelecimentoController@delete')->name('estab.delete');
     });
 
-    Route::prefix('admin')->group(function (){
-       Route::get('', 'AdminController@index')->name('admin.index');
-       Route::get('/user','UserController@index')->name('user.index');
-       Route::get('/user/edit/{$id}','UserController@edit')->name('user.edit');
-       Route::post('/user/update/{$id}','UserController@update')->name('user.update');
-       Route::get('/user/delete/{$id}', 'UserController@delete')->name('user.delete');
-    });
+//    Route::prefix('admin')->group(function (){
+//       Route::get('', 'AdminController@index')->name('admin.index');
+//       Route::get('/user','UserController@index')->name('user.index');
+//       Route::get('/user/edit/{$id}','UserController@edit')->name('user.edit');
+//       Route::post('/user/update/{$id}','UserController@update')->name('user.update');
+//       Route::get('/user/delete/{$id}', 'UserController@delete')->name('user.delete');
+//    });
 
     Route::prefix('perfil')->group(function (){
        Route::get('{id}','PerfilController@index')->name('perfil.index');
