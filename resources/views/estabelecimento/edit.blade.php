@@ -11,14 +11,14 @@
         </div>
         <div class="form-group">
             <label>Categoria</label>
-            <select name="type" class="form-control">
-                <option>Tipo</option>
-                <option value="0">Bar</option>
-                <option value="1">Lanchonete</option>
-                <option value="2">Pizzaria</option>
-                <option value="3">Pub</option>
-                <option value="4">Restaurante</option>
-                <option value="5">Sorveteria</option>
+            <select name="type" class="form-control" required>
+                <option value="">Tipo</option>
+                <option value="Bar">Bar</option>
+                <option value="Lanchonete">Lanchonete</option>
+                <option value="Pizzaria">Pizzaria</option>
+                <option value="Pub">Pub</option>
+                <option value="Restaurante">Restaurante</option>
+                <option value="Sorveteria">Sorveteria</option>
             </select>
         </div>
         <div class="form-group">

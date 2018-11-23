@@ -14,22 +14,24 @@
                 <div class="col-md-4">
                     <a href="{{route('estab.store')}}"><button class="profile-addestab-btn"> Adicionar estabelecimento</button></a>
                 </div>
+            <div class="container">
+
+            </div>
+            <div class="row">
                 @foreach($estab as $e)
-                <div class="col-md-12">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">{{$e->name}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{$e->type}}</h6>
-                            <p class="card-text">{{$e->description}}</p>
-                            <a href="{{route('estab.edit',$e->id)}}"><button class="profile-btn-edit"> Editar </button></a>
-                            <a href="{{route('estab.delete',$e->id)}}"><button class="profile-btn-del btn-danger">Excluir</button></a>
+                    <div class="col-md-6">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{$e->name}}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{{$e->type}}</h6>
+                                <p class="card-text">{{$e->description}}</p>
+                                <a href="{{route('estab.edit',$e->id)}}"><button class="profile-btn-edit"> Editar </button></a>
+                                <a href="{{route('estab.delete',$e->id)}}"><button class="profile-btn-del btn-danger">Excluir</button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-
+                @endforeach
+            </div>
         </div>
-    </div>
-    @endforeach
+            </div>
     @endsection

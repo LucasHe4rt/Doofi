@@ -35,7 +35,7 @@
 
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ url('/') }}">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -65,7 +65,7 @@
                 </li>
                 <li class="nav-item">
                     @if (Route::has('register'))
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        <a class="nav-link" href="{{ route('register') }}">{{ __('Registre-se') }}</a>
                     @endif
                 </li>
             @else
