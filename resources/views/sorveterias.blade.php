@@ -2,6 +2,7 @@
 @section('content')
     <div class="container" style="margin-top: 20px;">
     <h1>Sorveterias</h1>
+        <div class="row">
         @foreach($sorv as $s)
         <div class="media col-md-6">
             <img class="d-flex align-self-start" src="{{asset('img/sorveteria.png')}}" alt="Generic placeholder image">
