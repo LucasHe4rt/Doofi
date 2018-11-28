@@ -1,11 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div id="carouselExampleIndicators" class="carousel slide my-slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="{{asset('img/slider1.jpg')}}" alt="First slide">
@@ -52,8 +48,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card text-white  mb-3">
-                        <h3 class="card-header bg-primary">Outros</h3>
-                        <a href="#"><img src="{{asset('img/imgcard4.jpg')}}" alt="Card image"></a>
+                        <h3 class="card-header bg-primary">Todos</h3>
+                        <a href="{{route('todos')}}"><img src="{{asset('img/imgcard4.jpg')}}" alt="Card image"></a>
                     </div>
                 </div>
             </div>

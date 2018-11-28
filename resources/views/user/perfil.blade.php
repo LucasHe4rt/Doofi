@@ -14,13 +14,10 @@
                 <div class="col-md-4">
                     <a href="{{route('estab.store')}}"><button class="profile-addestab-btn"> Adicionar estabelecimento</button></a>
                 </div>
-            <div class="container">
-
-            </div>
             <div class="row">
                 @foreach($estab as $e)
-                    <div class="col-md-6">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-6" style="width: 40rem;margin-bottom: 22.7px;">
+                        <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">{{$e->name}}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">{{$e->type}}</h6>
